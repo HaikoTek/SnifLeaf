@@ -1,3 +1,4 @@
 #include "Base-macOS.xcconfig"
 
 PRODUCT_BUNDLE_IDENTIFIER = com.datt.SnifLeaf
+SNIFLEAF_DATABASE_KEY = hgafea86Sw9a8y

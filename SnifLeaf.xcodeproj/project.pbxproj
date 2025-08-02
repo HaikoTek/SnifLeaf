@@ -46,6 +46,7 @@
 		A33462332E1BC8670053FF0A /* CategoryBenchmarkTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33462322E1BC8670053FF0A /* CategoryBenchmarkTableView.swift */; };
 		A33462352E1BC9E50053FF0A /* EndpointBenchmarkTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33462342E1BC9E50053FF0A /* EndpointBenchmarkTableView.swift */; };
 		A343742005EEDA76B20E027D /* SharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC8A45232C7AA6395F27A63 /* SharedTests.swift */; };
+		A34A5B572E3DE70400E0F929 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34A5B562E3DE70400E0F929 /* AppConfig.swift */; };
 		A36AA99F2E12A6E70066B38D /* GRDBManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36AA99E2E12A6E70066B38D /* GRDBManagerTests.swift */; };
 		A3911C402DEEF05A0009AEE6 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3911C3F2DEEF05A0009AEE6 /* LogEntry.swift */; };
 		A3911C622DEEFB1E0009AEE6 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = A3911C612DEEFB1E0009AEE6 /* GRDB */; };
@@ -234,6 +235,7 @@
 		A33462302E1BC7CA0053FF0A /* BenchmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkView.swift; sourceTree = "<group>"; };
 		A33462322E1BC8670053FF0A /* CategoryBenchmarkTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBenchmarkTableView.swift; sourceTree = "<group>"; };
 		A33462342E1BC9E50053FF0A /* EndpointBenchmarkTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointBenchmarkTableView.swift; sourceTree = "<group>"; };
+		A34A5B562E3DE70400E0F929 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		A363F8C9DDA959E6283A36FD /* SharedTests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SharedTests.xcconfig; sourceTree = "<group>"; };
 		A36AA99E2E12A6E70066B38D /* GRDBManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRDBManagerTests.swift; sourceTree = "<group>"; };
 		A3911C3F2DEEF05A0009AEE6 /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
@@ -491,6 +493,7 @@
 		83CACDCF0E642970BD88D871 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A34A5B552E3DE6D300E0F929 /* Config */,
 				A3343F212DE99AB300E75B78 /* Components */,
 				A33462212E1BC7490053FF0A /* Scenes */,
 				488B25AFBD1ACA0C04581660 /* Assets.xcassets */,
@@ -679,6 +682,14 @@
 				A334622E2E1BC7940053FF0A /* BenchmarkInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A34A5B552E3DE6D300E0F929 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A34A5B562E3DE70400E0F929 /* AppConfig.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		A3CDA2482DED92A7009C107B /* Vendors */ = {
@@ -1082,6 +1093,7 @@
 				A33462282E1BC7490053FF0A /* ProxyControlView.swift in Sources */,
 				A33462292E1BC7490053FF0A /* SidebarFilterView.swift in Sources */,
 				A334622A2E1BC7490053FF0A /* LogListInteractor.swift in Sources */,
+				A34A5B572E3DE70400E0F929 /* AppConfig.swift in Sources */,
 				A334622F2E1BC7940053FF0A /* BenchmarkInteractor.swift in Sources */,
 				96A9D48B78B70045B1F77705 /* SnifLeafApp.swift in Sources */,
 			);
