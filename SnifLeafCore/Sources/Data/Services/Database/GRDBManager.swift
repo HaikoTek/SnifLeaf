@@ -94,13 +94,13 @@ public class GRDBManager: ObservableObject {
                 try savedLog.save(db)
             }
 
-            DispatchQueue.main.async { [savedLog] in
-                NotificationCenter.default.post(
-                    name: .GRDBSavedNewLog,
-                    object: nil,
-                    userInfo: [NotificationKeys.newLogEntry: savedLog]
-                )
-            }
+//            DispatchQueue.main.async { [savedLog] in
+//                NotificationCenter.default.post(
+//                    name: .GRDBSavedNewLog,
+//                    object: nil,
+//                    userInfo: [NotificationKeys.newLogEntry: savedLog]
+//                )
+//            }
         } catch {
             print("Error saving log entry: \(error)")
         }

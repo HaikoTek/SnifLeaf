@@ -32,28 +32,34 @@ public class LogProcessor: ObservableObject {
             var logToSave = logEntry
             
             let filteredCategory: TrafficCategory
-            if logEntry.host!.contains("http://") {
-                filteredCategory = .unknown
-            } else if logEntry.host!.contains("docker") {
-                filteredCategory = .systemUpdates
-            } else if logEntry.host!.contains("floware") {
-                filteredCategory = .apiCallJson
-            } else if logEntry.host!.contains("teams") {
-                filteredCategory = .productivity
-            } else if logEntry.host!.contains("google") {
-                filteredCategory = .googleServices
-            } else if logEntry.host!.contains("youtube") {
+            if logEntry.url.contains("video") {
                 filteredCategory = .videoStreaming
-            } else if logEntry.host!.contains("zalo")
-                        || logEntry.host!.contains("messenger")
-                        || logEntry.host!.contains("whatsapp")
-                        || logEntry.host!.contains("viber")
-                        || logEntry.host!.contains("telegram") {
-                filteredCategory = .socialMedia
+            } else if logEntry.url.contains("/order") {
+                if logEntry.url.contains("agile/order") {
+                    filteredCategory = .floAgileOrders
+                } else {
+                    filteredCategory = .sortsEndpoints
+                }
+            } else if logEntry.url.contains("domailsvr") {
+                filteredCategory = .floWeb
+            } else if logEntry.url.contains("v41-api") {
+                filteredCategory = .floApp
+            } else if logEntry.url.contains("chime") {
+                filteredCategory = .callChat
+            } else if logEntry.url.contains("socket") {
+                filteredCategory = .socket
+            } else if logEntry.url.contains("news") {
+                filteredCategory = .newsAndInformation
+            } else if logEntry.url.contains("imap") {
+                filteredCategory = .email
+            } else if logEntry.url.contains("flodav") {
+                filteredCategory = .calendars
+            } else if logEntry.url.contains("api-last-modified") {
+                filteredCategory = .analytics
             } else {
                 filteredCategory = .others
             }
-            
+
             logToSave.trafficCategory = filteredCategory
             dbManager.insertLogEntry(log: logToSave)
         }
