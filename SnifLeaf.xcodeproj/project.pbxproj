@@ -219,7 +219,6 @@
 		9B1D31778A7F0EA199C4747E /* SnifLeafCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnifLeafCore.h; sourceTree = "<group>"; };
 		9BC62F9E4E6FB80459803164 /* Shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
 		9FE60CE0E812382C0D7AB32A /* SnifLeaf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnifLeaf.entitlements; sourceTree = "<group>"; };
-		A333F5A72E45C900006B9F69 /* tét.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "tét.swift"; sourceTree = "<group>"; };
 		A3343F0E2DE996A000E75B78 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		A33461D22E1B0BB40053FF0A /* BenchmarkMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkMetrics.swift; sourceTree = "<group>"; };
 		A33461D42E1B0C0B0053FF0A /* TrafficCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficCategory.swift; sourceTree = "<group>"; };
@@ -457,7 +456,6 @@
 				A235E3CAA172158A71109A5B /* Tests */,
 				7AA2A425B8C6EFE7ABBC662D /* Products */,
 				A33410042DE83F8200EE9B4C /* Frameworks */,
-				A333F5A72E45C900006B9F69 /* tét.swift */,
 			);
 			sourceTree = "<group>";
 		};
