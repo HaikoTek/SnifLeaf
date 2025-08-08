@@ -74,6 +74,23 @@ struct CategoryBenchmarkTableView: View {
         case .iotDevice: return "lightbulb.fill"
         case .unknown: return "questionmark.circle.fill"
         case .others: return "ellipsis.circle.fill"
+        case .sortsEndpoints:
+            return "list.bullet.rectangle.fill"
+            
+        case .floAgileOrders:
+            return "shippingbox.fill"
+        case .callChat:
+            return "phone.fill"
+        case .analytics:
+            return "chart.bar.fill"
+        case .socket:
+            return "network"
+        case .calendars:
+            return "calendar.circle.fill"
+        case .floWeb:
+            return "globe.americas.fill"
+        case .floApp:
+            return "app.fill"
         }
     }
 }
