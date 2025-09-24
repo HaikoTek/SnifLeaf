@@ -287,9 +287,6 @@ public final class MitmProcessManager: ObservableObject {
 
             self.outputBuffer.append(newString)
             
-            // ✅ Thêm dòng này để log độ dài của outputBuffer
-                   print("Độ dài outputBuffer: \(self.outputBuffer.count)")
-
             while let newlineRange = self.outputBuffer.range(of: "\n") {
                 let line = String(self.outputBuffer[..<newlineRange.lowerBound])
                 self.outputBuffer.removeSubrange(..<newlineRange.upperBound)
