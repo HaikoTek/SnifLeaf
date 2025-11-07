@@ -42,7 +42,7 @@ struct LogListBodyView: View {
                                 .cornerRadius(5)
                                 .listRowSeparator(.hidden)
                                 .listRowInsets(EdgeInsets(top: 2, leading: 10, bottom: 2, trailing: 10))
-                                .transition(.move(edge: .top).combined(with: .opacity))
+//                                .transition(.move(edge: .top).combined(with: .opacity))
                                 .id(log.id)
                         }
 
@@ -66,7 +66,7 @@ struct LogListBodyView: View {
                     .animation(.interpolatingSpring(stiffness: 250, damping: 25), value: logListInteractor.logs)
                     .onChange(of: logListInteractor.logs.first?.id) { firstID in
                         guard let firstID = firstID else { return }
-                        proxy.scrollTo(firstID, anchor: .top)
+//                        proxy.scrollTo(firstID, anchor: .top)
                     }
                 }
             }
