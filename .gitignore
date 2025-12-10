@@ -17,3 +17,6 @@ xcuserdata/
 Carthage/
 
 .idea/
+
+# ml-service
+ml-service/__pycache__/*
