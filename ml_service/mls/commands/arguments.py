@@ -3,8 +3,8 @@ from functools import partial
 from pathlib import Path
 from typing import Any, Optional, Union
 
-from snifai.commands.cli_options import AVAILABLE_CLI_OPTIONS
-from snifai.constants import DEFAULT_CONFIG
+from mls.commands.cli_options import AVAILABLE_CLI_OPTIONS
+from mls.constants import DEFAULT_CONFIG
 
 ARGS_COMMON = ["logfile", "version"]
 
@@ -14,9 +14,7 @@ NO_CONF_ALLOWED = []
 
 ARGS_WEBSERVER: list[str] = []
 
-ARGS_FILES_CONVERTER: list[str] = [
-    "convert_to_csv",
-]
+ARGS_FILES_CONVERTER: list[str] = []
 
 
 class Arguments:
@@ -61,13 +59,13 @@ class Arguments:
 
         # Build main command
         self.parser = ArgumentParser(
-            prog="snifai",
+            prog="mls",
             description="A toolkit for developers.",
         )
 
         self._build_args(optionlist=["version_main"], parser=self.parser)
 
-        from snifai.commands import (
+        from mls.commands import (
             start_training,
         )
 

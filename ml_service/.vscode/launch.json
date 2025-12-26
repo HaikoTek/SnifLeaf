@@ -5,10 +5,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python: Snifai Train",
+      "name": "Python: CoremlCLI Train",
       "type": "python",
       "request": "launch",
-      "module": "snifai",
+      "module": "mls",
       "args": [
         "train"
       ]

@@ -1,9 +1,9 @@
 # Setup Python virtual environment (virtualenv)
 
-You will run snifai in separated `virtual environment`
+You will run Mls in separated `virtual environment`
 
 ```bash
-# create virtualenv in directory /hgtool/.venv
+# create virtualenv in directory /mls/.venv
 python3 -m venv .venv
 
 # run virtualenv
@@ -21,9 +21,10 @@ python3 -m pip install -r requirements.txt
 python3 -m pip install -e .
 ```
 
-# Usage 
+# Usage
 
 To create MLModel, simply run the following command:
+
 ```bash
-snifai train
+mls train
 ```

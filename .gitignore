@@ -19,5 +19,5 @@ Carthage/
 .idea/
 
 # ml-service
-snifai/__pycache__/*
-snifai/.venv
+ml_service/__pycache__/*
+ml_service/.venv

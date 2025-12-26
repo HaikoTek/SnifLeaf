@@ -1,4 +1,4 @@
-from snifai import __version__
+from mls import __version__
 
 
 class Arg:

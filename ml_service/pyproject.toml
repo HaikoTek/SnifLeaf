@@ -3,7 +3,7 @@ requires = ["setuptools >= 64.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "snifai"
+name = "mls"
 dynamic = ["version"]
 
 authors = [
@@ -11,15 +11,15 @@ authors = [
   {name = "Hg Q.", email = "hgq287@gmail.com"},
 ]
 
-description = "Snifai - The utility tool for developers"
+description = "CoreML-CLI: An AI tool to build Core ML models for Swift projects."
 readme = "README.md"
 requires-python = ">=3.10"
 
 [project.scripts]
-snifai = "snifai.main:main"
+mls = "mls.main:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["snifai*"]
+include = ["mls*"]
 exclude = ["tests", "tests.*", "user_data", "user_data*"]
 namespaces = true

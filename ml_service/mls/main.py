@@ -2,38 +2,38 @@ import logging
 import sys
 from typing import Any, Optional
 
-from snifai import __version__
-from snifai.exceptions import OperationalException
+from mls import __version__
+from mls.exceptions import OperationalException
 
 # check min. python version (>= 3.10 required)
 if sys.version_info < (3, 10):  # pragma: no cover
-    sys.exit("Snifai requires Python version >= 3.10")
+    sys.exit("Mls CLI requires Python version >= 3.10")
 
-from snifai.commands import Arguments
+from mls.commands import Arguments
 
-logger = logging.getLogger("snifai")
+logger = logging.getLogger("mls")
 
 
 def main(sysargv: Optional[list[str]] = None) -> None:
     return_code: Any = 1
     try:
-        print("Snifai CLI")
+        print("Starting Mls CLI")
         arguments = Arguments(sysargv)
         args = arguments.get_parsed_arg()
 
         # Call subcommand.
         if "func" in args:
-            logger.info(f"snifai {__version__}")
+            logger.info(f"mls {__version__}")
             return_code = args["func"](args)
         else:
             # No subcommand was issued.
             raise OperationalException(
-                "Usage of Snifai requires a subcommand to be specified.\n"
+                "Usage of Mls CLI requires a subcommand to be specified.\n"
                 "To see the full list of options available, please use "
-                "`snifai --help` or `snifai <command> --help`."
+                "`mls --help` or `mls <command> --help`."
             )
     finally:
-        print("Exiting snifai")
+        print("Exiting Mls CLI")
         sys.exit(return_code)
 
 
