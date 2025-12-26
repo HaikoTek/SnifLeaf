@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools >= 64.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snifai"
+dynamic = ["version"]
+
+authors = [
+  {name = "Hg Q."},
+  {name = "Hg Q.", email = "hgq287@gmail.com"},
+]
+
+description = "Snifai - The utility tool for developers"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+snifai = "snifai.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["snifai*"]
+exclude = ["tests", "tests.*", "user_data", "user_data*"]
+namespaces = true
