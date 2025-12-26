@@ -1,0 +1,2 @@
+[console_scripts]
+snifai = snifai.main:main
